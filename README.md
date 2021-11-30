@@ -82,6 +82,7 @@ You can turn on/off every buttons or group
 | ⇠ FoldAll                               | touchBar.foldAll                  | false         | boolean | group_3     |
 | ⇢ UnFold                                | touchBar.unfoldAll                | false         | boolean | group_3     |
 | ☰↓ Copy                                 | touchBar.copyLinesDownAction      | true          | boolean | group_1     |
+| ⏎ Line                                  | touchBar.goToLine                 | false         | boolean | group_2     |
 |                                         | touchBar.showActivityBar          | false         | boolean |             |
 | ![](images/files-activity-bar.png)      | touchBar.showExplorer             | true          | boolean | activityBar |
 | ![](images/search-activity-bar.png)     | touchBar.search                   | true          | boolean | activityBar |
