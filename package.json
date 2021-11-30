@@ -108,7 +108,7 @@
         {
           "command": "workbench.action.gotoLine",
           "group": "group_2",
-          "when": "config.touchBar.goToLines"
+          "when": "config.touchBar.goToLine"
         },
         {
           "command": "editor.action.goToReferences",
@@ -201,7 +201,7 @@
       "type": "object",
       "title": "TouchBar Pro",
       "properties": {
-        "touchBar.goToLines": {
+        "touchBar.goToLine": {
           "type": "boolean",
           "default": false,
           "description": "Enable button «⏎ Line»"
