@@ -4,7 +4,7 @@
   "description": "Support touch bar for MacBook pro",
   "publisher": "amedomary",
   "repository": "https://github.com/Amedomary/touchbar-vscode",
-  "version": "1.17.6",
+  "version": "1.17.7",
   "engines": {
     "vscode": "^1.45.1"
   },
@@ -25,6 +25,10 @@
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
+      {
+        "command": "workbench.action.gotoLine",
+        "title": "⏎ Line"
+      },
       {
         "command": "editor.action.goToReferences",
         "title": "→ƒ Ref"
@@ -101,6 +105,11 @@
     ],
     "menus": {
       "touchBar": [
+        {
+          "command": "workbench.action.gotoLine",
+          "group": "group_2",
+          "when": "config.touchBar.goToLines"
+        },
         {
           "command": "editor.action.goToReferences",
           "group": "group_1",
@@ -192,6 +201,11 @@
       "type": "object",
       "title": "TouchBar Pro",
       "properties": {
+        "touchBar.goToLines": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable button «⏎ Line»"
+        },
         "touchBar.goToReferences": {
           "type": "boolean",
           "default": false,
